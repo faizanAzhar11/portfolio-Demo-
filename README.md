@@ -2,6 +2,8 @@
 
 A modern, responsive portfolio website built with Next.js 14, TypeScript, and Tailwind CSS. Optimized for Azure Static Web Apps deployment with excellent SEO and performance.
 
+🌐 **Live Site**: [https://thankful-pond-0d63a9f10.azurestaticapps.net/](https://thankful-pond-0d63a9f10.azurestaticapps.net/)
+
 ![Portfolio Screenshot](./public/screenshot.png)
 
 ## ✨ Features
