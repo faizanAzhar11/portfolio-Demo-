@@ -1,0 +1,24 @@
+{
+  "navigationFallback": {
+    "rewrite": "/index.html",
+    "exclude": ["/images/*.{png,jpg,jpeg,gif,bmp}", "/css/*"]
+  },
+  "responseOverrides": {
+    "401": {
+      "redirect": "/login",
+      "statusCode": 302
+    }
+  },
+  "platform": {
+    "apiRuntime": "node:18"
+  },
+  "routes": [
+    {
+      "route": "/api/*",
+      "allowedRoles": ["anonymous", "authenticated"]
+    }
+  ],
+  "mimeTypes": {
+    ".json": "application/json"
+  }
+}
