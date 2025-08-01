@@ -1,12 +1,78 @@
-# COPILOT_INSTRUCTIONS.md
+# Faizan Azhar Portfolio Website
 
-## 1. Project Overview
+This is a modern, responsive portfolio website built with Next.js 14, TypeScript, and Tailwind CSS, designed for deployment on Azure Static Web Apps.
 
-Provide context so Copilot can tailor suggestions:
+## 🏗️ Architecture
 
-**Project Name:** Faizan Azhar's Portfolio
+- **Framework**: Next.js 14 with App Router
+- **Language**: TypeScript for type safety
+- **Styling**: Tailwind CSS with custom design system
+- **Animations**: Framer Motion for smooth interactions
+- **Deployment**: Azure Static Web Apps with GitHub Actions CI/CD
+- **SEO**: Complete meta tags, Open Graph, Twitter Cards, JSON-LD
 
-**Tech Stack:** Next.js, React, Tailwind CSS, TypeScript
+## 📁 Project Structure
+
+```
+portfolio/
+├── app/                     # Next.js App Router
+│   ├── layout.tsx          # Root layout with SEO & theme
+│   ├── page.tsx            # Homepage with all sections
+│   ├── not-found.tsx       # 404 error page
+│   └── globals.css         # Global styles & Tailwind
+├── components/             # React components
+│   ├── sections/          # Page sections
+│   │   ├── Hero.tsx       # Hero section with intro
+│   │   ├── About.tsx      # About me section
+│   │   ├── TechStack.tsx  # Skills and technologies
+│   │   ├── Projects.tsx   # Featured projects
+│   │   ├── Certifications.tsx # Professional certifications
+│   │   └── Contact.tsx    # Contact form & info
+│   ├── Navbar.tsx         # Navigation with mobile menu
+│   ├── Footer.tsx         # Footer with links
+│   ├── ThemeToggle.tsx    # Dark/light mode toggle
+│   ├── JsonLd.tsx         # Structured data for SEO
+│   └── theme-provider.tsx # Theme context provider
+├── lib/                   # Utilities and data
+│   ├── data.ts           # All portfolio data (resume info)
+│   └── utils.ts          # Helper functions
+├── public/               # Static assets
+│   ├── robots.txt        # SEO robots file
+│   ├── manifest.json     # PWA manifest
+│   └── resume.pdf        # Downloadable resume
+├── .github/workflows/    # GitHub Actions
+│   └── azure-swa-deploy.yml # Azure Static Web Apps deployment
+└── staticwebapp.config.json # Azure SWA configuration
+```
+
+## Content Management
+
+### Personal Information
+Edit `lib/data.ts` to update contact details, professional summary, and social media links.
+
+### Experience & Projects
+Update the data arrays in `lib/data.ts` for work experience, projects, and certifications.
+
+## Development
+
+```bash
+# Install dependencies
+npm install
+
+# Run development server
+npm run dev
+
+# Build for production
+npm run build
+```
+
+## Deployment
+
+Configured for Azure Static Web Apps with automatic GitHub Actions deployment.
+
+---
+
+**Built with ❤️ by Faizan Azhar**
 
 **Purpose:** Showcase skills, projects, certifications, and contact details
 
